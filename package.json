@@ -1,6 +1,6 @@
 {
   "name": "all-repos",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Get all github repositories by username",
   "author": {
     "name": "Kyoz",
