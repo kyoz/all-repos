@@ -1,0 +1,44 @@
+{
+  "name": "all-repos",
+  "version": "0.0.0",
+  "description": "Get all github repositories by username",
+  "author": {
+    "name": "Kyoz",
+    "email": "banminkyoz@gmail.com"
+  },
+  "repository": "banminkyoz/all-repos",
+  "license": "MIT",
+  "engines": {
+    "node": ">=6"
+  },
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "xo && ava --verbose"
+  },
+  "keywords": [
+    "plugin",
+    "node",
+    "module",
+    "node_module",
+    "github",
+    "repos",
+    "repositories",
+    "github repos",
+    "github repositories",
+    "all github repos",
+    "all github repositories"
+  ],
+  "dependencies": {
+    "crawler": "^1.1.4",
+    "timeago.js": "^3.0.2"
+  },
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "xo": "^0.21.1"
+  },
+  "xo": {
+    "space": 2
+  }
+}
