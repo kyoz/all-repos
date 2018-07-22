@@ -55,16 +55,14 @@ function getReposInfoByPage(githubUsername, page) {
 
   return new Promise(resolve => {
     const crawler = new Crawler({
-      maxConnections: 1,
+      maxConnections: 100,
       callback: (error, res, done) => {
         if (error) {
           return console.log(error);
         }
 
-        const {
-          $
-        } = res;
-        $('#all-repositories-list > ul > li').each((i, p) => {
+        const {$} = res;
+        $('#user-repositories-list > ul > li').each((i, p) => {
           const name = $(p).find('[itemprop="name codeRepository"]').text().trim();
           const description = $(p).find('[itemprop="description"]').text().trim();
           const forkFrom = $(p).find('.d-inline-block.mb-1 > .f6.text-gray.mb-1 > .muted-link').text().trim();
